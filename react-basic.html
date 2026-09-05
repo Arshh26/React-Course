@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- This is for Exteral library "Babel-(JavaScript Compiler (Translates other languages into JS))" -->
+<html>
+  <!-- Represent a websites -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <head>
+    <!-- Contains things which is not visible on the page -->
+    <title>React Basics</title>
+  </head>
+  <body>
+    <!-- contains things which is visible on the page -->
+
+    <div class="js-container"></div>
+    <!-- This creates an empty in the HTML. The class name is: js-container -->
+
+    <!--External Library Loaded -->
+    <script src="https://unpkg.com/supersimpledev@8.6.4/external-library.js"></script>
+    <!--Code that is ouside of our computer, The someone else wrote-->
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <!--This is a code for react, it is having a shared features that are used in both mobile apps and react dom-->
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <!--This is also a code for react, this is only specific to websites-->
+
+    <!-- Load External Library BABEl -->
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <!-- This is for Exteral library "Babel-(JavaScript Compiler (Translates other languages into JS))" -->
+
+    <script type="text/babel">
+      /* This attribute tells BABEl to translate all the code inside here to normal JS */
+      const button = <button>Hello</button>;
+
+      const container = document.querySelector(".js-container");
+      /* It searches the DOM for an element matching the CSS selector. means Find the element whose class is js-container.*/
+      ReactDOM.createRoot(container).render(button);
+      /*React This is the HTML element where I want you to work
+      render() tells React: "Render this content inside the React root*/
+    </script>
+  </body>
+</html>
